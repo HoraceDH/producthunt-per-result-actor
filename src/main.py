@@ -44,7 +44,7 @@ async def main() -> None:
             limit = max_paid_items
             Actor.log.warning(f"limit > actor_max_paid_dataset_items, max_items: {max_paid_items}, limit: {limit}, final use: {limit}")
 
-        Actor.log.info(f'Launching Product Hunt Scraper Actor, input: {actor_input}')
+        Actor.log.info(f'Launching Product Hunt Scraper Actor, actor_max_paid_dataset_items: {max_paid_items}, input: {actor_input}')
 
         year, month, day = date.split("-")
         date = datetime.date(int(year), int(month), int(day))
