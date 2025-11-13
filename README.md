@@ -4,6 +4,9 @@
 - The running speed is extremely fast, requiring only a small amount of time and memory, and the operating cost is very economical.
 - It is highly suitable for market research, competitive analysis and trend monitoring, and can provide reliable and structured data output, optimizing it for commercial intelligence applications.
 
+## Another charging method
+- https://apify.com/cloudcharlestom/producthunt-scraper
+
 ## Your gains
 - Efficient data extraction in multiple time dimensions: can efficiently extract data from the Product Hunt website within daily, weekly, monthly and annual time periods to meet the analysis needs of different time spans.
 - Supports flexible control of data collection range and scale through parameters such as cycle, date, week, and limit to meet diverse needs.
