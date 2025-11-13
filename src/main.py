@@ -60,6 +60,8 @@ async def main() -> None:
         try:
             product_hunt_scraper = ProductHuntNodriverScraper(
                 logger=Actor.log,
+                sleep_seconds_per_page=0.2,
+                sleep_seconds_per_detail=0.2,
                 leaderboard_daily_page_sha256_hash=product_hunt_config.get("leaderboard_daily_page_sha256_hash"),
                 leaderboard_weekly_page_sha256_hash=product_hunt_config.get("leaderboard_weekly_page_sha256_hash"),
                 leaderboard_monthly_page_sha256_hash=product_hunt_config.get("leaderboard_monthly_page_sha256_hash"),
