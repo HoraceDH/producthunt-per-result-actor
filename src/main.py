@@ -9,6 +9,7 @@ https://docs.apify.com/sdk/python
 from __future__ import annotations
 
 import datetime
+import os
 import traceback
 
 # Beautiful Soup - A library for pulling data out of HTML and XML files. Read more at:
@@ -37,6 +38,11 @@ async def main() -> None:
         date = actor_input.get("date", "2025-11-05")
         week = actor_input.get("week", 1)
         limit = actor_input.get("limit", 10)
+
+        max_paid_items = int(os.getenv("ACTOR_MAX_PAID_DATASET_ITEMS", 0))
+        if max_paid_items and limit > max_paid_items:
+            limit = max_paid_items
+            Actor.log.warning(f"limit > actor_max_paid_dataset_items, max_items: {max_paid_items}, limit: {limit}, final use: {limit}")
 
         Actor.log.info(f'Launching Product Hunt Scraper Actor, input: {actor_input}')
 
