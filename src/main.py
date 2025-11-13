@@ -39,7 +39,8 @@ async def main() -> None:
         week = actor_input.get("week", 1)
         limit = actor_input.get("limit", 10)
 
-        max_paid_items = int(os.getenv("ACTOR_MAX_PAID_DATASET_ITEMS", 0))
+        max_paid_items = os.getenv("ACTOR_MAX_PAID_DATASET_ITEMS", 0) or 2000
+        max_paid_items = int(max_paid_items)
         if max_paid_items and limit > max_paid_items:
             limit = max_paid_items
             Actor.log.warning(f"limit > actor_max_paid_dataset_items, max_items: {max_paid_items}, limit: {limit}, final use: {limit}")
