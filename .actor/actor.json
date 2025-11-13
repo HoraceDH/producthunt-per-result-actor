@@ -1,0 +1,18 @@
+{
+  "actorSpecification": 1,
+  "name": "Product Hunt Scraper - High-Performance Data Extraction Actor",
+  "title": "It is capable of efficiently extracting data from the Product Hunt website within daily, weekly, monthly and annual time periods, including various metadata such as names, descriptions, categories, likes, multiple manufacturers, contact links, etc. The operation speed is extremely fast.",
+  "description": "It is capable of efficiently extracting data from the Product Hunt website within daily, weekly, monthly and annual time periods, including various metadata such as names, descriptions, categories, likes, multiple manufacturers, contact links, etc. The operation speed is extremely fast and the operating cost is very economical. It is highly suitable for market research, competitive analysis and trend monitoring, and can provide reliable and structured data output, optimizing it for commercial intelligence applications.",
+  "version": "0.0",
+  "buildTag": "latest",
+  "minMemoryMbytes": 512,
+  "maxMemoryMbytes": 4096,
+  "meta": {
+    "templateId": "python-start"
+  },
+  "input": "./input_schema.json",
+  "dockerfile": "../Dockerfile",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  }
+}

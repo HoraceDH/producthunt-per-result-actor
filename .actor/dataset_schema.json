@@ -1,0 +1,13 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": {},
+      "display": {
+        "component": "table"
+      }
+    }
+  }
+}

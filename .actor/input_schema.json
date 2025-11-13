@@ -1,0 +1,41 @@
+{
+  "title": "Product Hunt Scraper - High-Performance Data Extraction Actor",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "cycle": {
+      "title": "Data Cycle",
+      "type": "string",
+      "description": "Data Cycle, For example: day, week, month, year",
+      "editor": "textfield",
+      "default": "day",
+      "maxLength": 6
+    },
+    "date": {
+      "title": "Date",
+      "type": "string",
+      "description": "Date, For example: 2025-11-05",
+      "default": "2025-11-05",
+      "editor": "textfield",
+      "maxLength": 10
+    },
+    "week": {
+      "title": "Week",
+      "type": "string",
+      "description": "Week of year, You need to enter date, and the year will be taken. range: 1-52, For example: 1",
+      "editor": "textfield",
+      "default": "1",
+      "maxLength": 2
+    },
+    "limit": {
+      "title": "Limit",
+      "type": "integer",
+      "description": "The maximum quantity obtained, the larger the quantity, the longer the time",
+      "default": 10,
+      "editor": "number",
+      "maximum": 50000
+    }
+  },
+  "required": [
+  ]
+}

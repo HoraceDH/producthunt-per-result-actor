@@ -1,0 +1,7 @@
+# Feel free to add your Python dependencies below. For formatting guidelines, see:
+# https://pip.pypa.io/en/latest/reference/requirements-file-format/
+
+apify < 4.0.0
+httpx==0.28.1
+libs/basecommons-1.0.0-py3-none-any.whl
+nodriver>=0.48.1,<0.49.0
