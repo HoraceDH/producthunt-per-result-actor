@@ -6,7 +6,7 @@
   "version": "0.0",
   "buildTag": "latest",
   "minMemoryMbytes": 512,
-  "maxMemoryMbytes": 4096,
+  "maxMemoryMbytes": 1024,
   "meta": {
     "templateId": "python-start"
   },

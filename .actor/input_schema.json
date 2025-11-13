@@ -33,7 +33,7 @@
       "description": "The maximum quantity obtained, the larger the quantity, the longer the time",
       "default": 10,
       "editor": "number",
-      "maximum": 50000
+      "maximum": 1000
     }
   },
   "required": [
